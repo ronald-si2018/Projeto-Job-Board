@@ -9,7 +9,8 @@ class static_controller extends Controller
 {
     public function index()
     {
-    	$home = static_content::where('id',1)->first();
-        return view('index', compact('home'));
+    	//$home = static_content::where('id',1)->first();
+        //return view('index', compact('home'));
+        return view('index');
     }
 }
