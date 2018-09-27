@@ -18,7 +18,6 @@
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/flaticon.css')}}" />
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/style.css')}}" />
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/responsive.css')}}" />
-
 	
 	@yield('header')
 
@@ -419,9 +418,10 @@
 	<script src="{{URL::asset('js/owl.carousel.js')}}"></script>
 	<script src="{{URL::asset('js/modernizr.js')}}"></script>
 	<script src="{{URL::asset('js/custom.js')}}"></script>
-
+	<script src="{{URL::asset('js/jquery.mask.min.js')}}"></script>
+	<script src="{{URL::asset('js/utils.js')}}"></script>
 	@yield('rodape')
-
+	
 	<!-- 
 	<script src="{{URL::asset('js/jquery.magnific-popup.js')}}"></script>
 	<script src="{{URL::asset('js/custom_II.js')}}"></script> 

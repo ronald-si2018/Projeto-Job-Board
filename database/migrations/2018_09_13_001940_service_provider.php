@@ -17,8 +17,10 @@ class ServiceProvider extends Migration
             $table->increments('id');
             $table->string('name', 150);
             $table->string('email', 120)->unique();
+            $table->string('password');
             $table->string('cpf', 11)->unique();
             $table->string('sexy');
+            $table->date('data_nascimento');
             $table->string('profissao');
             $table->string('telephone1', 11);
             $table->string('telephone2', 11);

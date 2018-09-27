@@ -55,3 +55,5 @@ Route::get('/candidate_profile', 'PagesController@candidateProfile');
 Route::get('/company_listing', 'PagesController@companyListing');
 
 Route::get('/index_map', 'PagesController@indexMap');
+
+Route::get('/register_provider', 'PagesController@register_provider');
