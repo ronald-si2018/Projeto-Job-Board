@@ -22,7 +22,7 @@ class ServiceProvider extends Migration
             $table->string('profissao');
             $table->string('telephone1', 11);
             $table->string('telephone2', 11);
-            $table->string('landline', 10); \\ telefone fixo
+            $table->string('landline', 10);
             $table->timestamps();
         });
     }

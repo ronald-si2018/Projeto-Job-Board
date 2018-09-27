@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','sexy','cpf','date_birth','phone1','phone2'
     ];
 
     /**
@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $primaryKey = 'id';
+    protected $table = "users";
+
+    public function adress()
+    {
+        return $this->hasOne('App\Adress');
+    }
 }

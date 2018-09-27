@@ -419,6 +419,9 @@
 	<script src="{{URL::asset('js/owl.carousel.js')}}"></script>
 	<script src="{{URL::asset('js/modernizr.js')}}"></script>
 	<script src="{{URL::asset('js/custom.js')}}"></script>
+
+	@yield('rodape')
+
 	<!-- 
 	<script src="{{URL::asset('js/jquery.magnific-popup.js')}}"></script>
 	<script src="{{URL::asset('js/custom_II.js')}}"></script> 

@@ -15,10 +15,10 @@ class Address extends Migration
     {
       Schema::create('address', function (Blueprint $table) {
         $table->increments('id');
-        $table->string('street', 40); \\rua
+        $table->string('street', 40);
         $table->integer('number');
-        $table->string('neighborhood', 40); \\bairro
-        $table->string('zipcode', 10); \\ cod postal
+        $table->string('neighborhood', 40);
+        $table->string('zipcode', 10);
         $table->string('city', 40);
         $table->string('state', 2);
         $table->string('cpf_service_provider');
