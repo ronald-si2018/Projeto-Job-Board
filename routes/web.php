@@ -16,7 +16,7 @@
 });
 */
 
-Route::get('/index', 'static_controller@index');
+Route::get('/index', 'StaticController@index');
 
 Route::get('/amigos', 'PagesController@amigos');
 
