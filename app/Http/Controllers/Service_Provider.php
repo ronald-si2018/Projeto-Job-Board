@@ -23,8 +23,10 @@ class Service_Provider extends Controller
     	$service = new ServiceProvider;
     	$service->name  = $request->name;
     	$service->email = $request->email;
+        $service->password = $request->password;
     	$service->cpf   = $request->cpf;
     	$service->sexy = $request->sexy;
+        $service->data_nascimento = $request->data_nascimento;
     	$service->profissao= $request->profissao;
     	$service->telephone1= $request->telephone1;
     	$service->telephone2= $request->telephone2;
@@ -46,8 +48,10 @@ class Service_Provider extends Controller
     	$service = Service_Provider::findOrFail($id);
     	$service->name  = $request->name;
     	$service->email = $request->email;
+        $service->password = $request->password;
     	$service->cpf   = $request->cpf;
     	$service->sexy = $request->sexy;
+        $service->data_nascimento = $request->data_nascimento;
     	$service->profissao= $request->profissao;
     	$service->telephone1= $request->telephone1;
     	$service->telephone2= $request->telephone2;

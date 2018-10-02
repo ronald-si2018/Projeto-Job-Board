@@ -111,5 +111,8 @@ class PagesController extends Controller
     {
 		return view('index_map');
     }
-    
+    public function register_provider()
+    {
+        return view('register_provider');
+    }
 }
