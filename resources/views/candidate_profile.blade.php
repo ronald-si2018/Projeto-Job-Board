@@ -185,25 +185,6 @@ Candidate-Profile
 </div>
 </div>
 <!-- jp profile Wrapper End -->
-<!-- jp Newsletter Wrapper Start -->
-<div class="jp_main_footer_img_wrapper">
-    <div class="jp_newsletter_img_overlay_wrapper"></div>
-    <div class="jp_newsletter_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="jp_newsletter_text">
-                        <img src="{{URL::asset('images/content/news_logo.png')}}" class="img-responsive" alt="news_logo" />
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <div class="jp_newsletter_field">
-                        <i class="fa fa-envelope-o"></i><input type="text" placeholder="Enter Your Email"><button type="submit">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jp Newsletter Wrapper End -->
+
 @stop
  

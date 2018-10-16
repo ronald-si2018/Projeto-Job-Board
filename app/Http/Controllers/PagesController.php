@@ -115,4 +115,14 @@ class PagesController extends Controller
     {
         return view('register_provider');
     }
+
+    public function add_postin()
+    {
+        return view('add_postin');
+    }
+
+    public function login()
+    {
+        return view('login');
+    }
 }

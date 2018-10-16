@@ -130,26 +130,26 @@ Plataforma de Serviços
     <div class="container">
         <div class="gc_counter_cont_wrapper">
             <div class="count-description">
-                <span class="timer">2540</span><i class="fa fa-plus"></i>
-                <h5 class="con1">Jobs Available</h5>
+                <span class="timer">1</span><i class="fa fa-plus"></i>
+                <h5 class="con1">Serviços Solicitados</h5>
             </div>
         </div>
         <div class="gc_counter_cont_wrapper2">
             <div class="count-description">
                 <span class="timer">7325</span><i class="fa fa-plus"></i>
-                <h5 class="con2">Members</h5>
+                <h5 class="con2">Membros</h5>
             </div>
         </div>
         <div class="gc_counter_cont_wrapper3">
             <div class="count-description">
                 <span class="timer">1924</span><i class="fa fa-plus"></i>
-                <h5 class="con3">Resumes</h5>
+                <h5 class="con3">Clientes</h5>
             </div>
         </div>
         <div class="gc_counter_cont_wrapper4">
             <div class="count-description">
                 <span class="timer">4275</span><i class="fa fa-plus"></i>
-                <h5 class="con4">Company</h5>
+                <h5 class="con4">Parceiros</h5>
             </div>
         </div>
     </div>
@@ -319,7 +319,7 @@ Plataforma de Serviços
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="jp_rightside_career_wrapper jp_best_deal_right_sec_wrapper">
                     <div class="jp_rightside_career_heading">
-                        <h4>Recent Resumes</h4>
+                        <h4>TOP 3</h4>
                     </div>
                     <div class="jp_rightside_career_main_content">
                         <div class="jp_rightside_career_content_wrapper jp_best_deal_right_content">
@@ -327,8 +327,8 @@ Plataforma de Serviços
                                 <img src="{{URL::asset('images/content/client_img1.jpg')}}" alt="career_img" />
                             </div>
                             <div class="jp_rightside_career_img_cont">
-                                <h4>Akshay Handge</h4>
-                                <p><i class="fa fa-folder-open-o"></i> &nbsp;Developer</p>
+                                <h4>Igor Barreto</h4>
+                                <p><i class="fa fa-folder-open-o"></i> &nbsp;Desenvolvedor</p>
                             </div>
                         </div>
                         <div class="jp_rightside_career_content_wrapper jp_best_deal_right_content">
@@ -336,8 +336,8 @@ Plataforma de Serviços
                                 <img src="{{URL::asset('images/content/client_img2.jpg')}}" alt="career_img" />
                             </div>
                             <div class="jp_rightside_career_img_cont">
-                                <h4>Akshay Handge</h4>
-                                <p><i class="fa fa-folder-open-o"></i> &nbsp;UI Designer</p>
+                                <h4>Ronald Rodrigues</h4>
+                                <p><i class="fa fa-folder-open-o"></i> &nbsp;Mestre</p>
                             </div>
                         </div>
                         <div class="jp_rightside_career_content_wrapper jp_best_deal_right_content">
@@ -345,12 +345,12 @@ Plataforma de Serviços
                                 <img src="{{URL::asset('images/content/client_img3.jpg')}}" alt="career_img" />
                             </div>
                             <div class="jp_rightside_career_img_cont">
-                                <h4>Jacklen Fandores</h4>
+                                <h4>PH</h4>
                                 <p><i class="fa fa-folder-open-o"></i> &nbsp;Web Designer</p>
                             </div>
                         </div>
                         <div class="jp_rightside_career_btn">
-                            <a href="#"><i class="fa fa-plus-circle"></i> View All</a>
+                            <a href="#"><i class="fa fa-plus-circle"></i> Ver todos</a>
                         </div>
                     </div>
                 </div>

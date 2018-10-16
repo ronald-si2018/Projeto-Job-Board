@@ -67,30 +67,25 @@
 										</ul>
 									</div>
 									<ul class="float_left">
-										<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Home&nbsp;<i class="fa fa-angle-down"></i></a>
-											<!-- mega menu start -->
-											<ul>
-												<li class="parent"><a href="index.html">Home1</a></li>
-												<li class="parent"><a href="index_II.html">Home2</a></li>
-												<li class="parent"><a href="index_map.html">Home3</a></li>
-											</ul>
+										<li class="has-mega gc_main_navigation"><a href="index" class="gc_main_navigation">  Início&nbsp;</a>
+											
 										</li>
 										<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Trabalho&nbsp;<i class="fa fa-angle-down"></i></a>
 											<!-- mega menu start -->
 											<ul>
-												<li class="parent"><a href="listing_left.html">Listagem-esquerda</a></li>
-												<li class="parent"><a href="listing_right.html">Listagem-Right</a></li>
-												<li class="parent"><a href="listing_single.html">Listagem única</a></li>
+												<li class="parent"><a href="listing_left">Listagem-esquerda</a></li>
+												<li class="parent"><a href="listing_right">Listagem-Right</a></li>
+												<li class="parent"><a href="listing_single">Listagem única</a></li>
 
 											</ul>
 										</li>
 										<li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Candidatos &nbsp;<i class="fa fa-angle-down"></i></a>
 											<!-- sub menu start -->
 											<ul>
-												<li class="parent"><a href="company_listing.html">Listagem de empresas</a></li>
-												<li class="parent"><a href="company_listing_single.html">Empresa Individual</a></li>
-												<li class="parent"><a href="candidate_listing.html">Listagem de candidatos</a></li>
-												<li class="parent"><a href="candidate_profile.html">Perfil do candidato</a></li>
+												<li class="parent"><a href="company_listing">Listagem de empresas</a></li>
+												<li class="parent"><a href="company_listing_single">Empresa Individual</a></li>
+												<li class="parent"><a href="candidate_listing">Listagem de candidatos</a></li>
+												<li class="parent"><a href="candidate_profile">Perfil do candidato</a></li>
 
 											</ul>
 											<!-- sub menu end -->
@@ -98,25 +93,25 @@
 										<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Páginas&nbsp;<i class="fa fa-angle-down"></i></a>
 											<!-- mega menu start -->
 											<ul>
-												<li class="parent"><a href="about.html">Sobre nós</a></li>
-												<li class="parent"><a href="404 error.html">404</a></li>
-												<li class="parent"><a href="add_postin.html">Adicionar postagem</a></li>
-												<li class="parent"><a href="login.html">Entrar</a></li>
-												<li class="parent"><a href="register.html">Registo</a></li>
-												<li class="parent"><a href="pricing.html">Preços</a></li>
+												<li class="parent"><a href="about">Sobre nós</a></li>
+												<li class="parent"><a href="404 error">404</a></li>
+												<li class="parent"><a href="add_postin">Adicionar postagem</a></li>
+												<li class="parent"><a href="login">Entrar</a></li>
+												<li class="parent"><a href="register">Registo</a></li>
+												<li class="parent"><a href="pricing">Preços</a></li>
 											</ul>
 										</li>
 										<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Blog&nbsp;<i class="fa fa-angle-down"></i></a>
 											<!-- mega menu start -->
 											<ul>
-												<li class="parent"><a href="blog_left.html">Blog esquerda</a></li>
-												<li class="parent"><a href="blog_right.html">Blog direito</a></li>
-												<li class="parent"><a href="blog_single_left.html">Blog Single Left</a></li>
-												<li class="parent"><a href="blog_single_right.html">Blog único direito</a></li>
+												<li class="parent"><a href="blog_left">Blog esquerda</a></li>
+												<li class="parent"><a href="blog_right">Blog direito</a></li>
+												<li class="parent"><a href="blog_single_left">Blog Single Left</a></li>
+												<li class="parent"><a href="blog_single_right">Blog único direito</a></li>
 
 											</ul>
 										</li>
-										<li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contato</a></li>
+										<li class="gc_main_navigation parent"><a href="contact" class="gc_main_navigation">Contato</a></li>
 									</ul>
 								</div>
 								<!-- mainmenu end -->
@@ -144,25 +139,7 @@
 																</form>
 															</li>
 															<li class="has-children">
-																<a href="#">Inicio</a>
-
-																<ul class="cd-secondary-dropdown is-hidden">
-																	<li class="go-back"><a href="#0">Menu</a></li>
-																	<li>
-																		<a href="index">Home1</a>
-																	</li>
-																	<!-- .has-children -->
-
-																	<li>
-																		<a href="#">Home2</a>
-																	</li>
-																	<li>
-																		<a href="index_map">Home3</a>
-																	</li>
-																	<!-- .has-children -->
-
-																</ul>
-																<!-- .cd-secondary-dropdown -->
+																<a href="index">Inicio</a>
 															</li>
 															<!-- .has-children -->
 
@@ -277,8 +254,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
 							<div class="jp_navi_right_btn_wrapper">
 								<ul>
-									<li><a href="#"><i class="fa fa-user"></i>&nbsp; CADASTRAR</a></li>
-									<li><a href="#"><i class="fa fa-sign-in"></i>&nbsp; ENTRAR</a></li>
+									<li><a href="register"><i class="fa fa-user"></i>&nbsp; CADASTRAR</a></li>
+									<li><a href="login"><i class="fa fa-sign-in"></i>&nbsp; ENTRAR</a></li>
 								</ul>
 							</div>
 						</div>
@@ -421,7 +398,6 @@
 	<script src="{{URL::asset('js/jquery.mask.min.js')}}"></script>
 	<script src="{{URL::asset('js/utils.js')}}"></script>
 	@yield('rodape')
-	
 	<!-- 
 	<script src="{{URL::asset('js/jquery.magnific-popup.js')}}"></script>
 	<script src="{{URL::asset('js/custom_II.js')}}"></script> 

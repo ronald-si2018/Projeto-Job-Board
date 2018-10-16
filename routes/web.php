@@ -30,6 +30,8 @@ Route::get('/add_postin', 'PagesController@addPostin');
 
 Route::get('/register', 'PagesController@register');
 
+Route::post('/register', ['as' => '/register', 'uses' => 'UsuarioController@store']);
+
 Route::get('/listing_right', 'PagesController@listingRight');
 
 Route::get('/listing_left', 'PagesController@listingLeft');
@@ -57,3 +59,7 @@ Route::get('/company_listing', 'PagesController@companyListing');
 Route::get('/index_map', 'PagesController@indexMap');
 
 Route::get('/register_provider', 'PagesController@register_provider');
+
+Route::get('/add_postin', 'PagesController@add_postin');
+
+Route::get('/login', 'PagesController@login');

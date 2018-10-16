@@ -19,10 +19,10 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('sexy');
-            $table->string('cpf')->unique();
+            $table->string('cpf_cnpj')->unique();
+            $table->integer('tipo_id');
             $table->date('date_birth');
             $table->string('phone1');
-            $table->string('phone2');
             $table->integer('address_id');
             $table->foreign('address_id')->references('id')->on('address');
             $table->rememberToken();

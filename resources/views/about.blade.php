@@ -5,8 +5,8 @@ Sobre nós
 @stop
 
 @section('header')
-    <link rel="stylesheet" type="text/css" href="{{url::asset('css/style_II.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{url::asset('css/responsive2.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/style_II.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/responsive2.css')}}" />
 @stop
 
 @section('conteudo')
@@ -162,7 +162,7 @@ Sobre nós
                                 <div class="item jp_recent_main">
                                     <div class="jp_career_main_box_wrapper">
                                         <div class="jp_career_img_wrapper">
-                                            <img src="{{url::asset('images/content/car_img1.jpg')}} alt="career_img" />
+                                            <img src="{{URL::asset('images/content/car_img1.jpg')}}" alt="career_img" />
                                         </div>
                                         <div class="jp_career_cont_wrapper">
                                             <p><i class="fa fa-calendar"></i>&nbsp;&nbsp; <a href="#">20 OCT, 2017</a></p>
@@ -175,7 +175,7 @@ Sobre nós
                                 <div class="item jp_recent_main">
                                     <div class="jp_career_main_box_wrapper">
                                         <div class="jp_career_img_wrapper">
-                                            <img src="{{url::asset('images/content/car_img2.jpg')}} alt="career_img" />
+                                            <img src="{{URL::asset('images/content/car_img2.jpg')}}" alt="career_img" />
                                         </div>
                                         <div class="jp_career_cont_wrapper">
                                             <p><i class="fa fa-calendar"></i>&nbsp;&nbsp; <a href="#">20 OCT, 2017</a></p>
@@ -188,7 +188,7 @@ Sobre nós
                                 <div class="item jp_recent_main">
                                     <div class="jp_career_main_box_wrapper">
                                         <div class="jp_career_img_wrapper">
-                                            <img src="{{url::asset('images/content/car_img3.jpg')}} alt="career_img" />
+                                            <img src="{{URL::asset('images/content/car_img3.jpg')}}" alt="career_img" />
                                         </div>
                                         <div class="jp_career_cont_wrapper">
                                             <p><i class="fa fa-calendar"></i>&nbsp;&nbsp; <a href="#">20 OCT, 2017</a></p>
@@ -205,9 +205,4 @@ Sobre nós
             </div>
         </div>
     </div>
-@stop
-
-@section('rodape')
-	<script src="{{url::asset('js/jquery.magnific-popup.js')}}"></script>
-    <script src="{{url::asset('js/custom_II.js')}}"></script>
 @stop
