@@ -3,6 +3,7 @@
 @section('header')
 <link rel="stylesheet" type="text/css" href="{{URL::asset('css/style_II.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{URL::asset('css/responsive2.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{URL::asset('css/util.css')}}" />
 @stop
 
 @section('titulo')
@@ -68,22 +69,26 @@ Cadastre-se
 										<!--Form Group-->
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
 											<input type="text" name="name" id="name" value="{{old('name')}}" placeholder="Nome completo*">
+											<span id='nome_message'></span>
 										</div>
 										<!--Form Group-->
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
 											<input type="email" name="email" id="email" value="{{old('email')}}" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+											<span id='email_message'></span>
 										</div>
 										<!--Form Group-->
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
 											<input type="password" name="password" id="password" value="{{old('password')}}" placeholder="Senha*">
+											<span id='password_message'></span>
 										</div>
 										<!--Form Group-->
 										<div id="div_password" class="form-group col-md-6 col-sm-6 col-xs-12">
 											<input type="password" name="password2" id="password2" value="{{old('password2')}}" placeholder="Confirmar Senha*">
-											<span id='password_message'></span>
+											<span id='password2_message'></span>
 										</div>
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
 											<input type="text" name="date_birth" id="data" placeholder="Data Nascimento*" value={{old('date_birth')}}>
+											<span id='data_message'></span>
 										</div>
 										<div id="div_cpf" class="form-group col-md-4 col-sm-4 col-xs-12">
 											<input type="text" name="cpf_cnpj" required="required" id="cpf" placeholder="CPF*" value={{old('cpf_cnpj')}}>
@@ -95,63 +100,68 @@ Cadastre-se
 												<option value="Masculino">Masculino</option>
 												<option value="Feminino">Feminino</option>
 											</select>
+											<span id='sexo_message'></span>
 										</div>
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="field-name" value="" placeholder="Endereço*">
+											<input type="text" name="endereco" id="endereco" value="{{old('endereco')}}" placeholder="Endereço*">
+											<span id='endereco_message'></span>
 										</div>
 										<div class="form-group col-md-4 col-sm-4 col-xs-12">
-											<input type="text" name="cep" id="cep" placeholder="Cep*">
+											<input type="text" name="cep" id="cep" value="{{old('cep')}}" placeholder="Cep*">
+											<span id='cep_message'></span>
 										</div>
 										<div class="form-group col-md-2 col-sm-2 col-xs-12">
-											<input type="text" name="field-name" value="" placeholder="Numero*">
+											<input type="text" name="numero" value="{{old('numero')}}" placeholder="Numero">
 										</div>
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="field-name" value="" placeholder="Complemento*">
+											<input type="text" name="complemento" value="{{old('complemento')}}" placeholder="Complemento">
 										</div>
 										<div class="form-group col-md-4 col-sm-4 col-xs-12">
-											<input type="text" name="field-name" value="" placeholder="Bairro*">
+											<input type="text" name="bairro" id="bairro" value="{{old('bairro')}}" placeholder="Bairro*">
+											<span id='bairro_message'></span>
 										</div>
 										<div class="form-group col-md-2 col-sm-2 col-xs-5">
 
-											<select type="text" name="field-name" value="">
+											<select type="text" name="estado" id="estado" value="{{old('estado')}}">
 												<option selected="">Estado*</option>
-												<option value="1" >AC</option>
-												<option value="2" >AL</option>
-												<option value="3" >AP</option>
-												<option value="4" >AM</option>
-												<option value="5">BA</option>
-												<option value="6" >CE</option>
-												<option value="7">DF</option>
-												<option value="8">ES</option>
-												<option value="9">GO</option>
-												<option value="10">MA</option>
-												<option value="11">MT</option>
-												<option value="12">MS</option>
-												<option value="13">MG</option>
-												<option value="14">PA</option>
-												<option value="15">PB</option>
-												<option value="16">PR</option>
-												<option value="17">PE</option>
-												<option value="18">PI</option>
-												<option value="19">RJ</option>
-												<option value="20">RN</option>
+												<option value="AC" >AC</option>
+												<option value="AL" >AL</option>
+												<option value="AP" >AP</option>
+												<option value="AM" >AM</option>
+												<option value="BA">BA</option>
+												<option value="CE" >CE</option>
+												<option value="DF">DF</option>
+												<option value="ES">ES</option>
+												<option value="GO">GO</option>
+												<option value="MA">MA</option>
+												<option value="MT">MT</option>
+												<option value="MS">MS</option>
+												<option value="MG">MG</option>
+												<option value="PA">PA</option>
+												<option value="PB">PB</option>
+												<option value="PR">PR</option>
+												<option value="PE">PE</option>
+												<option value="PI">PI</option>
+												<option value="RJ">RJ</option>
+												<option value="RN">RN</option>
 												<option value="21">RS</option>
-												<option value="22">RO</option>
-												<option value="23">RR</option>
+												<option value="RO">RO</option>
+												<option value="RR">RR</option>
 												<option value="24">SC</option>
-												<option value="25">SP</option>
-												<option value="26">SE</option>
-												<option value="27">TO</option>
+												<option value="SP">SP</option>
+												<option value="SE">SE</option>
+												<option value="TO">TO</option>
 											</select>
+											<span id='estado_message'></span>
 										</div>
 
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
-
-											<input type="text" name="field-name" value="" placeholder="Cidade*">
-
+											<input type="text" name="cidade" id="cidade" value="{{old('cidade')}}" placeholder="Cidade*">
+											<span id='cidade_message'></span>
 										</div>
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
 											<input type="text" name="phone1" id="telefone" value="{{old('phone1')}}" placeholder="Telefone*">
+											<span id='telefone_message'></span>
 										</div>                                    
 										<!--Form Group
 										<div class="form-group col-md-6 col-sm-6 col-xs-12 custom_input">
@@ -253,98 +263,4 @@ Cadastre-se
 	</div>
 </div>
 <!-- jp register wrapper end -->
-@stop
-
-@section('rodape')
-
-<script type="text/javascript">
-	//var test = true;
-	//var aux = null;
-	//console.log("entrou: " + test);
-	$(document).ready(function(){
-		$("a.btn.btn-primary.login_btn.send").click(function(){
-			if($('#concordo_1').is(":checked"))
-				document.getElementById("fisica").submit();
-			else
-				$('#concordo_1_message').html('Você precisa aceitar os Termos e Condições').css('color', 'red','paddingLeft','0.3em');
-		}); 
-
-		function forceLower(strInput) {
-			strInput.value=strInput.value.toLowerCase();
-		}
-	});
-
-	$('#password2').on('keyup', function () {
-		//console.log("apertou: " + test);
-		if ($('#password').val() == $('#password2').val()) {
-			$('#password_message').html('').css('color', 'red');
-			//aux = test = $('#password_message').detach();
-			//console.log("removeu: " + test);
-		} else{
-			//console.log("e ai? " + test);
-			//$('#password2').val().length > $('#password').val().length
-			//if((!test) && (aux!= null)){ 
-			//	//console.log("aux: " + aux);
-			//	aux.appendTo( "#div_password" );
-			//	test = true;
-			//}
-			$('#password_message').html('As senhas devem ser iguais').css('color', 'red','paddingLeft','0.3em');
-			//console.log("false: " + test);
-			//test = false;
-		}
-	});
-</script>
-
-<script>
-	$('#cpf').on('keyup', function () {
-		var cpf = $('#cpf').val();
-		cpf = cpf.replace(/\./g,''); //remove todos os pontos
-		cpf = cpf.replace('-', '');
-        if (!vercpf(cpf))
-        {
-            errors = "1";
-            if (errors){
-            	$('#cpf_message').html('CPF inválido').css('color', 'red');
-            }
-            document.retorno = (errors == '');
-        }
-    });
-
-    function vercpf(cpf) {
-        if (cpf.length != 11 ||
-            cpf == "00000000000" ||
-            cpf == "11111111111" ||
-            cpf == "22222222222" ||
-            cpf == "33333333333" ||
-            cpf == "44444444444" ||
-            cpf == "55555555555" ||
-            cpf == "66666666666" ||
-            cpf == "77777777777" ||
-            cpf == "88888888888" ||
-            cpf == "99999999999")
-            return false;
-
-        add = 0;
-
-        for (i = 0; i < 9; i++)
-                add += parseInt(cpf.charAt(i)) * (10 - i);
-        rev = 11 - (add % 11);
-        if (rev == 10 || rev == 11)
-            rev = 0;
-        if (rev != parseInt(cpf.charAt(9)))
-            return false;
-        add = 0;
-                for (i = 0; i < 10; i++)
-                add += parseInt(cpf.charAt(i)) * (11 - i);
-        rev = 11 - (add % 11);
-        if (rev == 10 || rev == 11)
-            rev = 0;
-        if (rev != parseInt(cpf.charAt(10)))
-            return false;
-        $('#cpf_message').html('').css('color', 'red');
-        //alert('O CPF INFORMADO É VÁLIDO.');
-        return true;
-    }
-
-</script>
 @stop

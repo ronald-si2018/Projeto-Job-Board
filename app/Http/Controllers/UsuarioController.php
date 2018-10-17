@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Address;
 
 class UsuarioController extends Controller
 {
@@ -24,6 +25,7 @@ class UsuarioController extends Controller
         //User::create($request->all());
         
         $usuario = new User;
+        $endereco = new Address;
         $usuario->name                           = $request->name;
         $usuario->email                          = $request->email;
 		$usuario->password                       = $request->password;
@@ -33,9 +35,18 @@ class UsuarioController extends Controller
 		$usuario->cpf_cnpj        	             = $request->cpf_cnpj;
         $usuario->tipo_id                        = 1;
 		$usuario->phone1                         = $request->phone1;
-        $usuario->phone2                         = $request->phone1;
-        $usuario->address_id                     = 1;
+        //$usuario->phone2                         = $request->phone1;
+        $endereco->street                        = $request->endereco;
+        $endereco->zipcode                       = $request->cep;
+        $endereco->number                        = $request->numero;
+        $endereco->complement                    = $request->complemento;
+        $endereco->neighborhood                  = $request->bairro;
+        $endereco->state                         = $request->estado;
+        $endereco->city                          = $request->cidade;
+        $endereco->cpf_cnpj_user                 = $request->cpf_cnpj;
+        $endereco->cpf_service_provider          = null;
         $usuario->save();
+        $endereco->save();
         //return redirect()->route('index')->with('message', 'Usuario cadastrado com sucesso!');
     }
   

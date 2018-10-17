@@ -1,7 +1,7 @@
 @extends('index_template')
 
 @section('titulo')
-Plataforma de Serviços
+Trampe Aqui
 @stop
 
 
@@ -14,7 +14,7 @@ Plataforma de Serviços
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="jp_job_heading_wrapper">
                     <div class="jp_job_heading">
-                        <h1><span>Plataforma de</span> Serviços</h1>
+                        <h1><span>Trampe</span> Aqui</h1>
                         <p>Escolha o tipo de serviço que deseja contratar</p>
                     </div>
                 </div>

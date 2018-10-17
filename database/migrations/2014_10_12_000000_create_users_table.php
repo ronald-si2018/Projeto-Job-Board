@@ -23,13 +23,15 @@ class CreateUsersTable extends Migration
             $table->integer('tipo_id');
             $table->date('date_birth');
             $table->string('phone1');
-            $table->integer('address_id');
-            $table->foreign('address_id')->references('id')->on('address');
             $table->rememberToken();
             $table->timestamps();
         });
     }
 
+ 
+//$table->integer('address_id');
+//$table->foreign('address_id')->references('id')->on('address');
+    
     /**
      * Reverse the migrations.
      *
