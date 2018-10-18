@@ -13,84 +13,85 @@ $(document).ready(function(){
 		function validarCampos() {
 			var flag = true;
 			if($('#name').val() == ''){
-				$('#nome_message').html('Campo obrigatório').addClass("validacao");
+				$('#name').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#nome_message').html('');
+				$('#name').css('border', '1px solid #282d39');
 			}
 			if($('#email').val() == ''){
-				$('#email_message').html('Campo obrigatório').addClass("validacao");
+				$('#email').css('border', '1px solid #FF0000');
 				flag = false;
 			}
 			else{
-				$('#email_message').html('');
+				$('#email').css('border', '1px solid #282d39');
 			}
 			if($('#password').val() == ''){
-				$('#password_message').html('Campo obrigatório').addClass("validacao");
+				$('#password').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#password_message').html('');
+				$('#password').css('border', '1px solid #282d39');
 			}
 			if($('#password2').val() == ''){
-				$('#password2_message').html('Campo obrigatório').addClass("validacao");
+				$('#password2').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#password2_message').html('');	
+				$('#password2').css('border', '1px solid #282d39');
 			}
 			if($('#data').val() == ''){
-				$('#data_message').html('Campo obrigatório').addClass("validacao");
+				$('#data').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#data_message').html('');	
+				$('#data').css('border', '1px solid #282d39');
 			}
 			if($('#cpf').val() == ''){
-				$('#cpf_message').html('Campo obrigatório').addClass("validacao");
+				$('#cpf').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#cpf_message').html('');
+				$('#cpf').css('border', '1px solid #282d39');
 			}
 			if($('#sexy').val() == 'Sexo*'){
-				$('#sexo_message').html('Obrigatório').addClass("validacao");
+				$('#sexy').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#sexo_message').html('');	
+				$('#sexy').css('border', '1px solid #282d39');
 			}
 			if($('#endereco').val() == ''){
-				$('#endereco_message').html('Campo obrigatório').addClass("validacao");
+				$('#endereco').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#endereco_message').html('');	
+				$('#endereco').css('border', '1px solid #282d39');
 			}
 			if($('#cep').val() == ''){
-				$('#cep_message').html('Campo obrigatório').addClass("validacao");
+				$('#cep').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#cep_message').html('');	
+				$('#cep').css('border', '1px solid #282d39');
 			}
 			if($('#bairro').val() == ''){
-				$('#bairro_message').html('Campo obrigatório').addClass("validacao");
+				$('#bairro').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#bairro_message').html('');	
+				$('#bairro').css('border', '1px solid #282d39');
 			}
 			if($('#cidade').val() == ''){
-				$('#cidade_message').html('Campo obrigatório').addClass("validacao");
+				$('#cidade').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#cidade_message').html('');	
+				$('#cidade').css('border', '1px solid #282d39');
 			}
 			if($('#estado').val() == 'Estado*'){
-				$('#estado_message').html('Obrigatório').addClass("validacao");
+				$('#estado').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#estado_message').html('');	
+				$('#estado').css('border', '1px solid #282d39');
 			}
 			if($('#telefone').val() == ''){
-				$('#telefone_message').html('Campo obrigatório').addClass("validacao");
+				$('#telefone').css('border', '1px solid #FF0000');
 				flag = false;
 			}else{
-				$('#telefone_message').html('');	
+				$('#telefone').css('border', '1px solid #282d39');	
 			}
+			$('#p_message').css('color', '#FF0000');
 			return flag;
 		}
 	});

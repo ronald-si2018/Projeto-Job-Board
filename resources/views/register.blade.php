@@ -63,7 +63,7 @@ Cadastre-se
 								<div class="tab-pane fade in active register_left_form" id="contentOne-1">
 									
 									<div class="jp_regiter_top_heading">
-										<p>Campos com * são obrigatórios </p>
+										<p id="p_message">Campos com * são obrigatórios </p>
 									</div>
 									<div class="row">
 										<!--Form Group-->
