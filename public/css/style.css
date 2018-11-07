@@ -142,7 +142,7 @@ ul{
 	background-color: hsla(200,40%,30%,.4);
 	background-image:		
 
-		url('../images/header/header_img.jpg'),
+		url('../images/header/header_img6.jpg'),
 		url('https://db.tt/vKBcgeOj');
 	background-repeat: repeat-x;
 	background-position: 
@@ -833,6 +833,16 @@ ul{
 	color:#23c0e9;
 	font-weight:bold;
 }
+
+.jp_job_heading h3{
+    font-size:40px;
+    color:#ffffff;
+}
+.jp_job_heading h3 span{
+    color:#23c0e9;
+    font-weight:bold;
+}
+
 .jp_job_heading p{
 	font-size:20px;
 	color:#ffffffa8;

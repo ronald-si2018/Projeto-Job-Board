@@ -8,7 +8,9 @@ use App\Address;
 
 class UsuarioController extends Controller
 {
-    //
+    const PESSOA_FISICA = 1;
+    const PESSOA_JURIDICA = 2;
+
 	public function index()
     {
         $usuario = User::orderBy('id', 'nome')->paginate(10);
@@ -30,10 +32,22 @@ class UsuarioController extends Controller
         $usuario->email                          = $request->email;
 		$usuario->password                       = $request->password;
         //$usuario->password2                      = $request->password2;
-		$usuario->date_birth                     = $request->date_birth;
-        $usuario->sexy                           = $request->sexy;
-		$usuario->cpf_cnpj        	             = $request->cpf_cnpj;
-        $usuario->tipo_id                        = 1;
+    
+		if($request->cpf != ''){
+            $usuario->sexy                       = $request->sexy;
+            $usuario->date_birth                 = $request->date_birth;
+            $usuario->cpf_cnpj                   = $request->cpf;    
+            $usuario->tipo_id                    = PESSOA_FISICA;
+            $endereco->cpf_cnpj_user             = $request->cpf;
+            $endereco->cpf_service_provider      = null;
+        }
+        else{
+            $usuario->cpf_cnpj                   = $request->cnpj;    
+            $usuario->tipo_id                    = PESSOA_JURIDICA;   
+            $endereco->cpf_cnpj_user             = null;
+            $endereco->cpf_service_provider      = $request->cnpj;
+        }
+
 		$usuario->phone1                         = $request->phone1;
         //$usuario->phone2                         = $request->phone1;
         $endereco->street                        = $request->endereco;
@@ -43,8 +57,8 @@ class UsuarioController extends Controller
         $endereco->neighborhood                  = $request->bairro;
         $endereco->state                         = $request->estado;
         $endereco->city                          = $request->cidade;
-        $endereco->cpf_cnpj_user                 = $request->cpf_cnpj;
-        $endereco->cpf_service_provider          = null;
+        
+        
         $usuario->save();
         $endereco->save();
         //return redirect()->route('index')->with('message', 'Usuario cadastrado com sucesso!');

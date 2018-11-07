@@ -47,18 +47,18 @@ Cadastre-se
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
 					<div role="tabpanel">
-						<form id="fisica" method="post" action="{{action('UsuarioController@store')}}" accept-charset="UTF-8"> 
-							<!-- Nav tabs -->
-							<ul id="tabOne" class="nav register-tabs">
-								<li class="active"><a href="#contentOne-1" data-toggle="tab">Conta pessoal <br> <span>Pessoa física procurando um trabalhador</span></a>
-								</li>
-								<li><a href="#contentOne-2" data-toggle="tab">Conta empresarial<br> <span>Pessoa jurídica procurando um trabalhador</span></a>
-								</li>
-							</ul>
 
-							<!-- Tab panes -->
-							<div class="tab-content">
+						<!-- Nav tabs -->
+						<ul id="tabOne" class="nav register-tabs">
+							<li class="active"><a href="#contentOne-1" data-toggle="tab">Conta pessoal <br> <span>Pessoa física procurando um trabalhador</span></a>
+							</li>
+							<li><a href="#contentOne-2" data-toggle="tab">Conta empresarial<br> <span>Pessoa jurídica procurando um trabalhador</span></a>
+							</li>
+						</ul>
 
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<form id="fisica" method="post" action="{{action('UsuarioController@store')}}" accept-charset="UTF-8">
 								{{ csrf_field() }}
 								<div class="tab-pane fade in active register_left_form" id="contentOne-1">
 									
@@ -91,7 +91,7 @@ Cadastre-se
 											<span id='data_message'></span>
 										</div>
 										<div id="div_cpf" class="form-group col-md-4 col-sm-4 col-xs-12">
-											<input type="text" name="cpf" required="required" id="cpf" placeholder="CPF*" value={{old('cpf_cnpj')}}>
+											<input type="text" name="cpf_cnpj" required="required" id="cpf" placeholder="CPF*" value={{old('cpf_cnpj')}}>
 											<span id='cpf_message'></span>
 										</div>
 										<div class="form-group col-md-2 col-sm-2 col-xs-5">
@@ -111,7 +111,7 @@ Cadastre-se
 											<span id='cep_message'></span>
 										</div>
 										<div class="form-group col-md-2 col-sm-2 col-xs-12">
-											<input type="text" name="numero" value="{{old('numero')}}" placeholder="Número">
+											<input type="text" name="numero" value="{{old('numero')}}" placeholder="Numero">
 										</div>
 										<div class="form-group col-md-6 col-sm-6 col-xs-12">
 											<input type="text" name="complemento" value="{{old('complemento')}}" placeholder="Complemento">
@@ -168,28 +168,27 @@ Cadastre-se
 											<input type="file" name="resume">
 											<p>JPG, PNG - 300KB TAM MAX</p>
 										</div>
-									-->
-									<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<div class="check-box text-center">
-											<input type="checkbox" name="shipping-option" id="concordo_1"> &ensp;
-											<label for="concordo_1">Eu concordo com os <a href="#" class="check_box_anchr">Termos e Condições</a></label> <br>
-											<span id='concordo_1_message'></span>
+										-->
+										<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<div class="check-box text-center">
+												<input type="checkbox" name="shipping-option" id="concordo_1"> &ensp;
+												<label for="concordo_1">Eu concordo com os <a href="#" class="check_box_anchr">Termos e Condições</a></label> <br>
+												<span id='concordo_1_message'></span>
+											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class="login_btn_wrapper register_btn_wrapper login_wrapper ">
-									<a class="btn btn-primary login_btn send" href="#"> Cadastrar </a>
+									<div class="login_btn_wrapper register_btn_wrapper login_wrapper ">
+										<a class="btn btn-primary login_btn send" href="#"> Cadastrar </a>
+									</div>
+									<div class="login_message">
+										<p>já é um membro? <a href="login"> Entre aqui </a> </p>
+									</div>
 								</div>
-								<div class="login_message">
-									<p>já é um membro? <a href="login"> Entre aqui </a> </p>
-								</div>
-							</div>
-							<!-- </form> 
+							</form>
 
-							<form id="juridica" method="post" action="{{action('UsuarioController@store')}}" accept-charset="UTF-8"> 
+							<form id="juridica" method="post" action="{{action('UsuarioController@store')}}" accept-charset="UTF-8">
 								{{ csrf_field() }}
-							-->
 
 							<div class="tab-pane fade register_left_form" id="contentOne-2">
 
@@ -199,119 +198,72 @@ Cadastre-se
 								<div class="row clearfix">
 									<!--Form Group-->
 									<div class="form-group col-md-6 col-sm-6 col-xs-12">
-										<input type="text" name="name" id="name_ju" value="{{old('name')}}" placeholder="Nome da Empresa*">
-										<span id='nome_message_ju'></span>
+										<input type="text" name="field-name" value="" placeholder="Seu nome*">
 									</div>
 									<!--Form Group-->
 									<div class="form-group col-md-6 col-sm-6 col-xs-12">
-										<input type="email" name="email" id="email_ju" value="{{old('email')}}" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-										<span id='email_message_ju'></span>
+										<input type="text" name="field-name" value="" placeholder="Email*">
 									</div>
 									<!--Form Group-->
 									<div class="form-group col-md-6 col-sm-6 col-xs-12">
-										<input type="password" name="password" id="password_ju" value="{{old('password')}}" placeholder="Senha*">
-										<span id='password_message_ju'></span>
+
+										<input type="password" name="field-name" value="" placeholder="senha*">
 									</div>
 									<!--Form Group-->
-									<div id="div_password_ju" class="form-group col-md-6 col-sm-6 col-xs-12">
-										<input type="password" name="password2" id="password2_ju" value="{{old('password2')}}" placeholder="Confirmar Senha*">
-										<span id='password2_message_ju'></span>
+									<div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+										<input type="password" name="field-name" value="" placeholder="confirmar senha*">
 									</div>
 
 									<!--Form Group-->
 									<div class="form-group col-md-6 col-sm-6 col-xs-12">
-										<input type="text" name="phone1" id="telefone_ju" value="{{old('phone1')}}" placeholder="Telefone*">
-										<span id='telefone_message_ju'></span>
+
+										<input type="text" name="field-name" value="" placeholder="telefone">
 									</div>
 
-									<div id="div_cnpj" class="form-group col-md-4 col-sm-4 col-xs-12">
-										<input type="text" name="cnpj" required="required" id="cnpj" placeholder="CNPJ*" value={{old('cpf_cnpj')}}>
-										<span id='cnpj_message'></span>
-									</div>
-
+									<!--Form Group-->
 									<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="endereco" id="endereco_ju" value="{{old('endereco')}}" placeholder="Endereço*">
-											<span id='endereco_message_ju'></span>
-										</div>
-										<div class="form-group col-md-4 col-sm-4 col-xs-12">
-											<input type="text" name="cep" id="cep_ju" value="{{old('cep')}}" placeholder="Cep*">
-											<span id='cep_message_ju'></span>
-										</div>
-										<div class="form-group col-md-2 col-sm-2 col-xs-12">
-											<input type="text" name="numero" value="{{old('numero')}}" placeholder="Número">
-										</div>
-										<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="complemento" value="{{old('complemento')}}" placeholder="Complemento">
-										</div>
-										<div class="form-group col-md-4 col-sm-4 col-xs-12">
-											<input type="text" name="bairro" id="bairro_ju" value="{{old('bairro')}}" placeholder="Bairro*">
-											<span id='bairro_message'></span>
-										</div>
-										<div class="form-group col-md-2 col-sm-2 col-xs-5">
 
-											<select type="text" name="estado" id="estado_ju" value="{{old('estado')}}">
-												<option selected="">Estado*</option>
-												<option value="AC" >AC</option>
-												<option value="AL" >AL</option>
-												<option value="AP" >AP</option>
-												<option value="AM" >AM</option>
-												<option value="BA">BA</option>
-												<option value="CE" >CE</option>
-												<option value="DF">DF</option>
-												<option value="ES">ES</option>
-												<option value="GO">GO</option>
-												<option value="MA">MA</option>
-												<option value="MT">MT</option>
-												<option value="MS">MS</option>
-												<option value="MG">MG</option>
-												<option value="PA">PA</option>
-												<option value="PB">PB</option>
-												<option value="PR">PR</option>
-												<option value="PE">PE</option>
-												<option value="PI">PI</option>
-												<option value="RJ">RJ</option>
-												<option value="RN">RN</option>
-												<option value="21">RS</option>
-												<option value="RO">RO</option>
-												<option value="RR">RR</option>
-												<option value="24">SC</option>
-												<option value="SP">SP</option>
-												<option value="SE">SE</option>
-												<option value="TO">TO</option>
-											</select>
-											<span id='estado_message_ju'></span>
-										</div>
+										<input type="text" name="field-name" value="" placeholder="nome da empresa">
 
-										<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="cidade" id="cidade_ju" value="{{old('cidade')}}" placeholder="Cidade*">
-											<span id='cidade_message_ju'></span>
-										</div>
+									</div>
+
+									<!--Form Group-->
+									<div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+										<input type="text" name="field-name" value="" placeholder="website">
+
+									</div>
+									<!--Form Group-->
+									<div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+										<input type="text" name="field-name" value="" placeholder="Endereço">
+									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
 										<div class="check-box text-center">
-											<input type="checkbox" name="shipping-option" id="concordo_2"> &ensp;
-											<label for="account-option_2">Eu concordo com os <a href="#" class="check_box_anchr">Termos e condições</a></label> <br>
-											<span id='concordo_2_message'></span>
+											<input type="checkbox" name="shipping-option" id="account-option_2"> &ensp;
+											<label for="account-option_2">Eu concordo com os <a href="#" class="check_box_anchr">Termos e condições</a> governando o uso do emprego</label>
 										</div>
 									</div>
 								</div>
 
 								<div class="login_btn_wrapper register_btn_wrapper login_wrapper ">
-									<a class="btn btn-primary login_btn send ju" href="#"> Cadastrar </a>
+									<a href="#" class="btn btn-primary login_btn"> cadastre </a>
 								</div>
 								<div class="login_message">
 									<p>Já é um membro? <a href="#"> Entre aqui </a> </p>
 								</div>
-
+								</form>
 							</div>
-						</form>
+
+						</div>
+						<p class="btm_txt_register_form">Caso você esteja usando um computador público / compartilhado, recomendamos que você faça o logout para evitar qualquer acesso não autorizado a sua conta.</p>
 					</div>
-					<p class="btm_txt_register_form">Caso você esteja usando um computador público / compartilhado, recomendamos que você faça o logout para evitar qualquer acesso não autorizado a sua conta.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 <!-- jp register wrapper end -->
 @stop

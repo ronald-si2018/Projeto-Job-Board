@@ -37,6 +37,19 @@ $('#return-to-top').on('click', function() {
         scrollTop : 0                
     }, 500);
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 100) {       
+        $('#return-to-top2').fadeIn(200);   
+    } else {
+        $('#return-to-top2').fadeOut(200);  
+    }
+});
+$('#return-to-top2').on('click', function() {     
+    $('body,html').animate({
+        scrollTop : 0                
+    }, 500);
+});
    
    //------------------------ OWL JS Start --------------------//
    

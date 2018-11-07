@@ -63,3 +63,5 @@ Route::get('/register_provider', 'PagesController@register_provider');
 Route::get('/add_postin', 'PagesController@add_postin');
 
 Route::get('/login', 'PagesController@login');
+
+Route::get('/contact', 'PagesController@contact');

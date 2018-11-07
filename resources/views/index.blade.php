@@ -1,5 +1,9 @@
 @extends('index_template')
 
+@section('header')
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+@stop
+
 @section('titulo')
 Trampe Aqui
 @stop
@@ -14,7 +18,7 @@ Trampe Aqui
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="jp_job_heading_wrapper">
                     <div class="jp_job_heading">
-                        <h1><span>Trampe</span> Aqui</h1>
+                        <h3>A <span>Plataforma de Serviços</span> de <span>Marabá</span></h3>
                         <p>Escolha o tipo de serviço que deseja contratar</p>
                     </div>
                 </div>
@@ -77,8 +81,9 @@ Trampe Aqui
     <div class="container">
         <div class="jp_top_jobs_category_wrapper jp_job_cate_left_border jp_job_cate_left_border_bottom">
             <div class="jp_top_jobs_category">
-                <i class="fa fa-code"></i>
-                <h3><a href="#">Desenvolvedor</a></h3>
+                <!-- <i class="fas fa-paint-brush"></i> -->
+                <i class="fas fa-paint-roller"></i>
+                <h3><a href="#">Pintor</a></h3>
                 <p>(240 serviços)</p>
             </div>
         </div>
@@ -91,29 +96,32 @@ Trampe Aqui
         </div>
         <div class="jp_top_jobs_category_wrapper jp_job_cate_left_border_bottom">
             <div class="jp_top_jobs_category">
-                <i class="fa fa-bar-chart"></i>
+                <!-- <i class="fa fa-bar-chart"></i> -->
+                <!-- <i class="fas fa-chalkboard-teacher"></i> -->
+                <i class="fas fa-graduation-cap"></i>
                 <h3><a href="#">Professor</a></h3>
                 <p>(2250 serviços)</p>
             </div>
         </div>
         <div class="jp_top_jobs_category_wrapper jp_job_cate_left_border_res">
             <div class="jp_top_jobs_category">
-                <i class="fa fa-medkit"></i>
-                <h3><a href="#">Medicos</a></h3>
+                <!-- <i class="fa fa-medkit"></i> -->
+                <i class="fas fa-wrench"></i>
+                <h3><a href="#">Mecânicos</a></h3>
                 <p>(202 serviços)</p>
             </div>
         </div>
         <div class="jp_top_jobs_category_wrapper">
             <div class="jp_top_jobs_category">
-                <i class="fa fa-university"></i>
+                <i class="fas fa-dumbbell"></i>
                 <h3><a href="#">Personal</a></h3>
                 <p>(1457 serviços)</p>
             </div>
         </div>
         <div class="jp_top_jobs_category_wrapper">
             <div class="jp_top_jobs_category">
-                <i class="fa fa-th-large"></i>
-                <h3><a href="#">Todos serviços</a></h3>
+                <i class="fas fa-bolt"></i>
+                <h3><a href="#">Eletricista</a></h3>
                 <p>(2000+ serviços)</p>
             </div>
         </div>
