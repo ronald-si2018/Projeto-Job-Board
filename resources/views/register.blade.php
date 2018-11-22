@@ -230,62 +230,62 @@ Cadastre-se
 									</div>
 
 									<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="endereco" id="endereco_ju" value="{{old('endereco')}}" placeholder="Endereço*">
-											<span id='endereco_message_ju'></span>
-										</div>
-										<div class="form-group col-md-4 col-sm-4 col-xs-12">
-											<input type="text" name="cep" id="cep_ju" value="{{old('cep')}}" placeholder="Cep*">
-											<span id='cep_message_ju'></span>
-										</div>
-										<div class="form-group col-md-2 col-sm-2 col-xs-12">
-											<input type="text" name="numero" value="{{old('numero')}}" placeholder="Número">
-										</div>
-										<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="complemento" value="{{old('complemento')}}" placeholder="Complemento">
-										</div>
-										<div class="form-group col-md-4 col-sm-4 col-xs-12">
-											<input type="text" name="bairro" id="bairro_ju" value="{{old('bairro')}}" placeholder="Bairro*">
-											<span id='bairro_message'></span>
-										</div>
-										<div class="form-group col-md-2 col-sm-2 col-xs-5">
+										<input type="text" name="endereco" id="endereco_ju" value="{{old('endereco')}}" placeholder="Endereço*">
+										<span id='endereco_message_ju'></span>
+									</div>
+									<div class="form-group col-md-4 col-sm-4 col-xs-12">
+										<input type="text" name="cep" id="cep_ju" value="{{old('cep')}}" placeholder="Cep*">
+										<span id='cep_message_ju'></span>
+									</div>
+									<div class="form-group col-md-2 col-sm-2 col-xs-12">
+										<input type="text" name="numero" value="{{old('numero')}}" placeholder="Número">
+									</div>
+									<div class="form-group col-md-6 col-sm-6 col-xs-12">
+										<input type="text" name="complemento" value="{{old('complemento')}}" placeholder="Complemento">
+									</div>
+									<div class="form-group col-md-4 col-sm-4 col-xs-12">
+										<input type="text" name="bairro" id="bairro_ju" value="{{old('bairro')}}" placeholder="Bairro*">
+										<span id='bairro_message'></span>
+									</div>
+									<div class="form-group col-md-2 col-sm-2 col-xs-5">
 
-											<select type="text" name="estado" id="estado_ju" value="{{old('estado')}}">
-												<option selected="">Estado*</option>
-												<option value="AC" >AC</option>
-												<option value="AL" >AL</option>
-												<option value="AP" >AP</option>
-												<option value="AM" >AM</option>
-												<option value="BA">BA</option>
-												<option value="CE" >CE</option>
-												<option value="DF">DF</option>
-												<option value="ES">ES</option>
-												<option value="GO">GO</option>
-												<option value="MA">MA</option>
-												<option value="MT">MT</option>
-												<option value="MS">MS</option>
-												<option value="MG">MG</option>
-												<option value="PA">PA</option>
-												<option value="PB">PB</option>
-												<option value="PR">PR</option>
-												<option value="PE">PE</option>
-												<option value="PI">PI</option>
-												<option value="RJ">RJ</option>
-												<option value="RN">RN</option>
-												<option value="21">RS</option>
-												<option value="RO">RO</option>
-												<option value="RR">RR</option>
-												<option value="24">SC</option>
-												<option value="SP">SP</option>
-												<option value="SE">SE</option>
-												<option value="TO">TO</option>
-											</select>
-											<span id='estado_message_ju'></span>
-										</div>
+										<select type="text" name="estado" id="estado_ju" value="{{old('estado')}}">
+											<option selected="">Estado*</option>
+											<option value="AC" >AC</option>
+											<option value="AL" >AL</option>
+											<option value="AP" >AP</option>
+											<option value="AM" >AM</option>
+											<option value="BA">BA</option>
+											<option value="CE" >CE</option>
+											<option value="DF">DF</option>
+											<option value="ES">ES</option>
+											<option value="GO">GO</option>
+											<option value="MA">MA</option>
+											<option value="MT">MT</option>
+											<option value="MS">MS</option>
+											<option value="MG">MG</option>
+											<option value="PA">PA</option>
+											<option value="PB">PB</option>
+											<option value="PR">PR</option>
+											<option value="PE">PE</option>
+											<option value="PI">PI</option>
+											<option value="RJ">RJ</option>
+											<option value="RN">RN</option>
+											<option value="21">RS</option>
+											<option value="RO">RO</option>
+											<option value="RR">RR</option>
+											<option value="24">SC</option>
+											<option value="SP">SP</option>
+											<option value="SE">SE</option>
+											<option value="TO">TO</option>
+										</select>
+										<span id='estado_message_ju'></span>
+									</div>
 
-										<div class="form-group col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="cidade" id="cidade_ju" value="{{old('cidade')}}" placeholder="Cidade*">
-											<span id='cidade_message_ju'></span>
-										</div>
+									<div class="form-group col-md-6 col-sm-6 col-xs-12">
+										<input type="text" name="cidade" id="cidade_ju" value="{{old('cidade')}}" placeholder="Cidade*">
+										<span id='cidade_message_ju'></span>
+									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
 										<div class="check-box text-center">

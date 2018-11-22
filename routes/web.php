@@ -32,6 +32,8 @@ Route::get('/register', 'PagesController@register');
 
 Route::post('/register', ['as' => '/register', 'uses' => 'UsuarioController@store']);
 
+Route::post('/register_provider', ['as' => '/register_provider', 'uses' => 'ServiceProvider@store']);
+
 Route::get('/listing_right', 'PagesController@listingRight');
 
 Route::get('/listing_left', 'PagesController@listingLeft');

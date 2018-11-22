@@ -10,6 +10,14 @@ $(document).ready(function(){
 		}
 	}); 
 
+	$("a.btn.btn-primary.login_btn.send.rp").click(function(){
+		alert('veio2');
+		if($('#concordo_ok').is(":checked")){
+			if(validarCamposFisica()){
+				document.getElementById("prestador").submit();
+			}
+	}
+
 	$("a.btn.btn-primary.login_btn.send.ju").click(function(){
 		if($('#concordo_2').is(":checked")){
 			if(validarCamposJuridica()){
